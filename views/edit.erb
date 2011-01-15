@@ -1,0 +1,13 @@
+<form action="<%= url %>" method="post" name="edit">
+<div class="photo">
+	<h2 class="title"><input type="text" name="title" value="<%= photo.title %>" /></h2>
+	<p class="meta"><input type="text" name="original_url" value="<%= photo.original_url %>" /></p>
+	<p class="meta"><%= photo.taken_at %></p>
+	<div class="entry">
+		<textarea name="body"><%= photo.body %></textarea>
+	</div>
+	<div class="edit"><input type="submit" value="Save" /></div>
+</div>
+</form>
+
+<script type="text/javascript">document.forms[0].title.focus()</script>

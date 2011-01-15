@@ -1,0 +1,77 @@
+= Snapped, a quick photoblog
+
+== Overview
+
+Snapped is a quick photoblog to quickly place Flickr photos 
+on a pedestal - your photoblog. I use Snapped: http://snapped.bjhess.com/
+
+Think of it as the first iteration of your photoblog. There's
+so little code, you can adapt it to your purpose like easy.
+
+== Features
+
+Snapped makes posting photos a breeze. Take the URL to any
+Flickr photo page and paste it in, click submit and you have
+a new post.
+
+The tech:
+
+* Flickr as a backend
+* Markdown for descriptions
+* Atom feed
+* Sinatra
+* MongoDB with MongoMapper
+* Easy deployment via Heroku + MongoHQ
+
+== Dependencies
+
+You gotta have MongoDB installed locally, son. You gotta sign
+up for a free Heroku account and install the free MongoHQ addon.
+Bundler should get all the gems for you.
+
+== Setup
+
+Edit main.rb and change the Blog config struct at the top as needed. Change
+the admin password and the admin cookie key and value. Just set them to any
+random value you'd like.
+
+Flickr API keys can be generated here: http://www.flickr.com/services/api/keys/
+
+You've installed and started MongoDB, right? Homebrew is your friend:
+https://github.com/mxcl/homebrew
+
+Bundler:
+
+  $ bundle install
+
+Run the server:
+
+  $ ruby main.rb
+
+And visit: http://localhost:4567/auth
+
+Log in with the password you selected, then click Get Snappin'. Go ahead and
+paste a Flickr URL in and watch Snapped do the rest.
+
+== Database
+
+MongoDB is really excellent. Once you have it running locally, it should
+Just Work™. And for deployment to Heroku, MongoHQ is also a snap to setup:
+
+http://docs.heroku.com/mongohq
+
+== Credits
+
+Created by Barry Hess
+
+Snapped is heavily influenced by the blogging software, Scanty (http://github.com/adamwiggins/scanty).
+In fact, this project was started with Scanty and then heavily modified to become Snapped.
+
+Much props also to photoblog: https://github.com/dannyw/photoblog
+
+Copyright (c) 2011 Barry Hess. Released under the MIT license: http://www.opensource.org/licenses/mit-license.php
+
+http://github.com/bjhess/snapped
+
+http://bjhess.com
+

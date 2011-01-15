@@ -1,0 +1,39 @@
+<div class="photo">
+  <div class="asset">
+	  <img src="<%= photo.display_image_url %>" style="width: 990px;"/>
+	</div>
+  <div class="nav"> 
+    <p>
+      <% previous_url, next_url = photo.previous_url, photo.next_url %>
+      <%= link_nav_if_url("&larr; Prev", previous_url) %>
+      <%= link_nav_if_url("Next &rarr;", next_url) %>
+    </p>
+  </div>
+	
+	<div class="info">
+  	<h2 class="title"><%= photo.title %></h2>
+
+  	<div class="entry">
+  		<%= photo.body_html %>
+  	</div>
+  	
+  	<div class="footing">
+      <p class="meta">
+        Snapped on <%= photo.taken_at.strftime("%b %d, %Y") %>
+      </p>
+
+  	  <% if admin? %>
+  	    <div class="admin">
+    		  <a href="<%= photo.url %>/edit">edit</a>
+    		  <form name="delete_form" method="post" action="<%= photo.url %>">
+            <input type="hidden" name="_method" value="delete" />
+            <a href="#" onClick="if(confirm('Delete? Really?')) {document.delete_form.submit();return false;} else {return false;}">delete</a>
+          </form>
+          &middot;
+    		  <a href="/photos/new">new</a>
+        </div>
+    	<% end %>
+    </div>
+  </div>
+  
+</div>
