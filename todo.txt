@@ -1,3 +1,4 @@
 - Clean up edit form.
 - Tests. O_o
 - SmugMug integration.
+- Easy FeedBurner integration.
