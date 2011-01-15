@@ -3,7 +3,7 @@
 == Overview
 
 Snapped is a quick photoblog to quickly place Flickr photos 
-on a pedestal - your photoblog. I use Snapped: http://snapped.bjhess.com/
+on a pedestal. I use Snapped: http://snapped.bjhess.com
 
 Think of it as the first iteration of your photoblog. There's
 so little code, you can adapt it to your purpose like easy.
@@ -35,7 +35,7 @@ Edit main.rb and change the Blog config struct at the top as needed. Change
 the admin password and the admin cookie key and value. Just set them to any
 random value you'd like.
 
-Flickr API keys can be generated here: http://www.flickr.com/services/api/keys/
+Flickr API keys can be generated here: http://www.flickr.com/services/api/keys
 
 You've installed and started MongoDB, right? Homebrew is your friend:
 https://github.com/mxcl/homebrew
@@ -59,6 +59,15 @@ MongoDB is really excellent. Once you have it running locally, it should
 Just Work™. And for deployment to Heroku, MongoHQ is also a snap to setup:
 
 http://docs.heroku.com/mongohq
+
+== Deployment
+
+Things you might need to know if you're not familiar with Heroku:
+
+* Signup: http://heroku.com/signup
+* Install the gem: http://docs.heroku.com/heroku-command
+* Basics for pushing your app to Heroku: http://docs.heroku.com/quickstart#getting-your-app-on-heroku
+* MongoHQ for your DB: http://docs.heroku.com/mongohq
 
 == Credits
 
