@@ -38,7 +38,7 @@ hr {
 
 /* Logo */
 
-#logo h1 {
+#logo2 h1 {
 	margin: 10px 0 15px;
 	padding: 0;
 	font-family: 'Lobster', 'Droid Sans', "Nimbus Sans L", Helvetica, Arial, Verdana, sans-serif;
@@ -49,12 +49,12 @@ hr {
 	color: #ccc;
 }
 
-#logo h1 a {
+#logo2 h1 a {
 	text-decoration: none;
 	color: #ccc;
 }
 
-#logo h1 .author {
+#logo2 h1 .author {
 	text-decoration: none;
 	font-family: 'Droid Sans', "Nimbus Sans L", Helvetica, Arial, Verdana, sans-serif;
 	letter-spacing: 0.025em;
@@ -67,7 +67,7 @@ hr {
 	margin-bottom: 10px;
 }
 
-#logo,
+#logo2,
 #content,
 #footer {
 	margin: 15px auto;
@@ -83,6 +83,10 @@ hr {
 
 .photo .asset {
   border: 2px solid #000;  
+}
+
+.photo .asset img {
+  border: none;
 }
 
 .photo .info {
@@ -157,6 +161,7 @@ hr {
   background: #333;
   cursor: default;
 }
+
 
 .nav a:hover {
   color:#fff;

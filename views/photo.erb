@@ -1,6 +1,9 @@
+<% previous_url, next_url = photo.previous_url, photo.next_url %>
+
 <div class="photo">
   <div class="asset">
-	  <img src="<%= photo.display_image_url %>" style="width: 990px;"/>
+    <%= link_nav_if_url(%{<img src="#{photo.display_image_url}" style="width: 990px;"/>}, previous_url) %>
+	  
 	</div>
   <div class="nav"> 
     <p>
