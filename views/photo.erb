@@ -23,6 +23,7 @@
   	<div class="footing">
       <p class="meta">
         Snapped on <%= photo.taken_at.strftime("%b %d, %Y") %>
+        &nbsp;<a href="<%= photo.original_url %>"><img src="images/flickr11.png" width="11" height="11" /></a>
       </p>
 
   	  <% if admin? %>
