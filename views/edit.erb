@@ -1,7 +1,7 @@
 <form action="<%= url %>" method="post" name="edit">
 <div class="photo">
 	<h2 class="title"><input type="text" name="title" value="<%= photo.title || 'Title' %>" /></h2>
-	<p class="meta"><input type="text" name="original_url" value="<%= photo.original_url || 'Photo URL' %>" /></p>
+	<p class="meta"><input type="text" name="original_url" value="<%= photo.original_url || 'Photo URL' %>" /> <%= photo.taken_at %></p>
 	<p class="meta"><%= photo.taken_at %></p>
 	<div class="entry">
 		<textarea name="body"><%= photo.body %></textarea>
