@@ -191,15 +191,19 @@ a img {
 
 form[name=edit] input[name=title] {
 	font-size: 100%;
-	width: 300pt;
+	width: 500px;
 }
-form[name=edit] input[name=tags] {
+form[name=edit] input[name=original_url] {
 	font-size: 100%;
-	width: 300pt;
+	width: 500px;
 }
 form[name=edit] textarea {
 	font-size: 100%;
-	width: 50em;
+	width: 650px;
 	height: 25em;
 }
 
+form[name=edit] input,
+form[name=edit] textarea {
+  margin-bottom: 15px;
+}

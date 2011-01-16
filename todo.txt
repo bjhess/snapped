@@ -1,4 +1,3 @@
-- Clean up edit form.
 - Get on Builder 3.
 - Tests. O_o
 - SmugMug integration.
