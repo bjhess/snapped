@@ -1,6 +1,5 @@
 - Better letter spacing on footer.
 - Clean up edit form.
-- j/k arrow key navigation.
 - Do some line-height and general text flow cleanup.
 - Get on Builder 3.
 - Tests. O_o

@@ -43,10 +43,10 @@ helpers do
 		halt(401, 'Not authorized') unless admin?
 	end
 	
-	def link_nav_if_url(text, url)
+	def link_nav_if_url(text, url, klass="")
 	  url ?
-	    "<a href='#{url}'>#{text}</a>" :
-      "<a href='#' class='disabled' onclick='return false;'>#{text}</a>"
+	    "<a href='#{url}' class='enabled #{klass}'>#{text}</a>" :
+      "<a href='#' class='disabled #{klass}' onclick='return false;'>#{text}</a>"
 	end
 end
 

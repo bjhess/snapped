@@ -8,8 +8,8 @@
   <div class="nav"> 
     <p>
       <% previous_url, next_url = photo.previous_url, photo.next_url %>
-      <%= link_nav_if_url("&larr; Prev", previous_url) %>
-      <%= link_nav_if_url("Next &rarr;", next_url) %>
+      <%= link_nav_if_url("&larr; Prev", previous_url, 'prev_link') %>
+      <%= link_nav_if_url("Next &rarr;", next_url, 'next_link') %>
     </p>
   </div>
 	
