@@ -176,6 +176,7 @@ a img {
 	font-family: 'Droid Sans', "Nimbus Sans L", Helvetica, Arial, Verdana, sans-serif;
 	color: #333;
 	border-top: 1px dashed #333;
+	letter-spacing: 0.06em;
 }
 
 #legal {
