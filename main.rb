@@ -2,6 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'mongo_mapper'
 require 'builder'
+require 'rack/mobile-detect'
 
 $LOAD_PATH.unshift(File.dirname(__FILE__) + '/lib')
 require 'photo'
@@ -39,6 +40,7 @@ error do
 	"Application error"
 end
 
+use Rack::MobileDetect
 helpers do
 	def admin?
 		request.cookies[Blog.admin_cookie_key] == Blog.admin_cookie_value
@@ -52,6 +54,10 @@ helpers do
 	  url ?
 	    "<a href='#{url}' class='enabled #{klass}'>#{text}</a>" :
       "<a href='#' class='disabled #{klass}' onclick='return false;'>#{text}</a>"
+	end
+	
+	def mobile?
+	 	!request.env['X_MOBILE_DEVICE'].blank?
 	end
 end
 
