@@ -27,6 +27,11 @@ configure do
 	)
 end
 
+# Disable template caching until a new version of Tilt comes out. This is
+# a performance hit:
+#   https://github.com/sinatra/sinatra/issuesearch?state=open&q=builder#issue/166/comment/681668
+enable :reload_templates
+
 error do
 	e = request.env['sinatra.error']
 	puts e.to_s
