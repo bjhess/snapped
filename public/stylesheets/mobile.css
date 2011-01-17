@@ -1,5 +1,6 @@
 .mobile #logo2,
 .mobile #content,
 .mobile #footer {
-	margin: 15px 15px;
+	margin: 15px auto;
+	padding: 0 15px ;
 }
