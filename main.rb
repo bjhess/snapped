@@ -22,7 +22,7 @@ configure do
 		:url_base => 'http://example.com/',
 		:admin_password => 'CHANGEME',
 		:admin_cookie_key => 'snapped_admin',
-		:admin_cookie_value => 'jsfgip5899u8rgu9490',
+		:admin_cookie_value => 'CHANGEME',
 		:flickr_api_key => 'get_this_from_your_flickr_account',
 		:flickr_shared_secret => 'get_this_from_your_flickr_account'
 	)
